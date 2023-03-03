@@ -33,9 +33,9 @@ pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-python manage.py collectstatic
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver 0.0.0.0:8000
+python3 manage.py collectstatic --noinput
+python3 manage.py makemigrations --noinput
+python3 manage.py migrate --noinput
+python3 manage.py runserver 0.0.0.0:8000
 
 
